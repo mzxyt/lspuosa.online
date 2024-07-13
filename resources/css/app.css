@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.accordion-collapse.collapse {
+  @apply visible;
+}
+
+.fc-theme-standard .fc-scrollgrid {
+  @apply border-0;
+}
+
+.fc-theme-standard td,
+.fc-theme-standard th {
+  @apply border-0 p-0.5;
+}
+
+.table-container {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.fc-theme-standard td {
+  @apply border-0;
+}
+
+.fc-daygrid-day-frame {
+  @apply p-1 border border-slate-200 rounded-lg;
+}
+
+.fc-h-event .fc-event-title-container {
+  @apply pl-1 font-medium;
+}
+
+.dashboard-card {
+  @apply !border-0 !border-b border-slate-100;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+  @apply bg-gradient-to-br from-yellow-500/20 to-cyan-500/20 rounded-xl;
+}
+
+tspan {
+  @apply text-sm font-medium;
+}
+
+.recharts-text.recharts-cartesian-axis-tick-value tspan {
+  @apply mt-2 block;
+}
+
+.accordion-button:not(.collapsed) {
+  @apply !bg-slate-100;
+}
+
+.accordion-button {
+  @apply hover:!bg-slate-50;
+}
+
+.react-datepicker-popper {
+  @apply bg-white;
+}
+
+.react-datepicker-wrapper {
+  @apply w-full;
+}

@@ -1,0 +1,11 @@
+.elegant-nav {
+  transition: 200ms !important;
+}
+.custom-input-group .inner {
+  position: relative !important;
+}
+.custom-input-group .inner .icon {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+}/*# sourceMappingURL=components.css.map */

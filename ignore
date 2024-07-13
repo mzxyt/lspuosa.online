@@ -1,0 +1,120 @@
+
+{
+    type: NavType.LINK,
+    text: 'Dashboard',
+    icon: <i className="fi fi-rr-apps"></i>,
+    href: route('admin.dashboard'),
+    urlPath: 'dashboard',
+},
+{
+    type: NavType.DROPDOWN,
+    text: 'Document Tracking',
+    icon: <i className='fi fi-rs-search-alt'></i>,
+    key: 'document-tracking',
+    opened: false,
+    navList: [
+        {
+            type: NavType.LINK,
+            text: 'Submission Bins',
+            icon: <i className='fi fi-rr-boxes'></i>,
+            href: route('admin.submission_bins'),
+            urlPath: 'submission-bins'
+        },
+        {
+            type: NavType.DROPDOWN,
+            text: 'Reports',
+            icon: <i className='fi fi-rr-document'></i>,
+            key: 'reports',
+            opened: false,
+            navList: []
+        },
+    ]
+},
+{
+    type: NavType.LINK,
+    text: 'Announcements',
+    icon: <i className="fi fi-rr-bullhorn"></i>,
+    href: route('admin.announcements'),
+    urlPath: 'announcements',
+},
+{
+    type: NavType.LINK,
+    text: 'User Events History',
+    icon: <i className="fi fi-rr-time-forward"></i>,
+    href: route('admin.user_events_history'),
+    urlPath: 'user_events_history',
+},
+{
+    type: NavType.LINK,
+    text: 'Reminders',
+    icon: <i className="fi fi-rr-note"></i>,
+    href: route('admin.reminders'),
+    urlPath: 'reminders',
+},
+{
+    type: NavType.LINK,
+    text: 'Feedbacks',
+    icon: <i className="fi fi-rr-comment-alt"></i>,
+    href: route("admin.feedbacks"),
+    urlPath: 'feedback'
+},
+{
+    type: NavType.LINK,
+    text: 'Campus Admins',
+    icon: <i className="fi fi-rr-user"></i>,
+    href: route('admin.admins'),
+    urlPath: 'admins'
+},
+{
+    type: NavType.DROPDOWN,
+    text: 'Unit Heads',
+    icon: <i className="fi fi-rr-users-alt"></i>,
+    key: 'unit-heads',
+    navList: [
+        {
+            type: NavType.LINK,
+            text: 'Profile',
+            href: route('admin.unit_heads.profiles'),
+            urlPath: 'unit-heads/profile'
+        },
+        {
+            type: NavType.LINK,
+            text: 'Info and Account',
+            href: route('admin.unit_heads.records'),
+            urlPath: 'unit-heads/records'
+        },
+    ]
+},
+// {
+//     type: NavType.LINK,
+//     text: 'Unit Heads',
+//     icon: <i className='fi fi-rr-user'></i>,
+//     href: route('admin.unit_heads.records'),
+//     urlPath: 'unit-heads/records'
+// },
+{
+    type: NavType.LINK,
+    text: 'Calendar',
+    icon: <i className="fi fi-rr-calendar"></i>,
+    href: route('calendar'),
+    urlPath: 'calendar'
+},
+{
+    type: NavType.DROPDOWN,
+    text: (
+        <span>
+            Downloadable <small>(ISO 9001_2015)</small>
+        </span>
+    ),
+    icon: <i className='fi fi-rs-document'></i>,
+    opened: false,
+    navList: downloadableNav,
+    key: 'downloadable'
+},
+{
+    type: NavType.LINK,
+    text: 'Settings',
+    icon: <i className="fi fi-rr-settings"></i>,
+    href: route('admin.settings'),
+    urlPath: 'settings'
+},
